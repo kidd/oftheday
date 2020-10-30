@@ -13,7 +13,7 @@ var Quote = {
 
 function get_cont(msg) {
   return m(".container", [
-      m("h1", "TITLE"),
+    m("h1", "F5 Crusher"),
       m(".row", [
         m(".column", [
           m("img", {
