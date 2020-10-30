@@ -1,4 +1,6 @@
 import m from "mithril";
+// import Untool from "./untool";
+var Untool = require("./untool")
 var root = document.body
 var r = Math.floor(Math.random() * 1000) + 1;
 var Quote = {
@@ -11,20 +13,23 @@ var Quote = {
   }
 }
 
+
 function get_cont(msg) {
   return m(".container", [
     m("h1", "F5 Crusher"),
-      m(".row", [
-        m(".column", [
-          m("img", {
-            src: "https://im-possible.info/images/library/grey/g"+ r +".gif"})
-        ]),
-        m(".column", [
-          m("p", msg)
-        ]),
-
-      ])
+    m(".row", [
+      m(".column", [
+        m("img", {
+          src: "https://im-possible.info/images/library/grey/g"+ r +".gif"})
+      ]),
+      m(".column", [
+        m("p", msg)
+      ]),
+    ]),
+    m(".row", [
+      m(Untool)
     ])
+  ])
 }
 
 var All = {
