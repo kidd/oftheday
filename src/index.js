@@ -1,6 +1,7 @@
 import m from "mithril";
 // import Untool from "./untool";
 var Untool = require("./untool")
+var Farnam = require("./farnam")
 var root = document.body
 var r = Math.floor(Math.random() * 1000) + 1;
 var Quote = {
@@ -28,7 +29,9 @@ function get_cont(msg) {
     ]),
     m(".row", [
       m(Untool)
-    ])
+    ]),
+    m(".row", [
+      m(Farnam)])
   ])
 }
 

@@ -1,4 +1,4 @@
-[
+const links = [
   {
     "href": "https://fs.blog/2015/11/map-and-territory/",
     "text": "1. The Map is not the Territory"
@@ -168,3 +168,5 @@
     "text": "Learning Community Forum"
   }
 ]
+
+module.exports = links
