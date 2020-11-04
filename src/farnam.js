@@ -2,13 +2,18 @@
 var m = require("mithril")
 var links = require("./farnam_links")
 
-var Farnam = {
-  data: links ,
-  view: function(vnode) {
-    const r = Farnam.data[Math.floor(Math.random() * Farnam.data.length)];
+function Farnam(initialVnode)  {
+  var r = 0
+  var data = links
 
-    return m("div", [
-      m("a", {href: r.href}, r.text)])
+  return {
+    oninit: function(vnode) {
+      r = data[Math.floor(Math.random() * data.length)]
+    },
+    view: function(vnode) {
+      return m("div", [
+        m("a", {href: r.href}, r.text)])
+    }
   }
 }
 

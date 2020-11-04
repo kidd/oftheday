@@ -1,8 +1,9 @@
 // import m from "mithril";
 var m = require("mithril")
 
-var Untool = {
-  data: [
+function Untool(initialVnode) {
+  var r
+  var data = [
     ["Am I only thinking of ideal solutions?","https://untools.co/inversion", "Inversion"],
     ["Can I break this problem down?", "https://untools.co/issue-trees", "Issue trees"],
     ["Do I need an original solution to a complex problem?","https://untools.co/first-principles", "First principles"],
@@ -16,11 +17,15 @@ var Untool = {
     ["How does this system work?","https://untools.co/connection-circles","Connection circles"],
     ["Why is X happening?", "https://untools.co/iceberg-model", "Iceberg model"]
   ]
-  ,
-  view: function(vnode) {
-    const r = Untool.data[Math.floor(Math.random() * Untool.data.length)];
-    return m("div", [
-      m("a", {href: r[1]}, r[0])])
+
+  return {
+    oninit: function(vnode) {
+      r = data[Math.floor(Math.random() * data.length)]
+    },
+    view: function(vnode) {
+      return m("div", [
+        m("a", {href: r[1]}, r[0])])
+    }
   }
 }
 
