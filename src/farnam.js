@@ -12,6 +12,7 @@ function Farnam(initialVnode)  {
     },
     view: function(vnode) {
       return m("div", [
+        "FarnamStreet(mentalmodels): ",
         m("a", {href: r.href}, r.text)])
     }
   }
