@@ -23,8 +23,15 @@ function Untool(initialVnode) {
       r = data[Math.floor(Math.random() * data.length)]
     },
     view: function(vnode) {
-      return m("div", [
-        m("a", {href: r[1]}, r[0])])
+      return m(".container",
+               m(".row", [
+                 m(".column .column-25", r[0]),
+                 m(".column .column-25 ",
+                   m('a', {href: "http://www.google.com"}, r[0]))
+               ]))
+      // return m("div", [
+      //   m("a", {href: r[1]}, r[0])])
+
     }
   }
 }
