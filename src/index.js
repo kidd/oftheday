@@ -3,6 +3,8 @@ import m from "mithril";
 var Untool = require("./untool")
 var Farnam = require("./farnam")
 var PG = require("./postgres")
+var BetterExplained = require("./better_explained")
+
 var root = document.body
 var r = Math.floor(Math.random() * 1000) + 1;
 var Quote = {
@@ -37,6 +39,10 @@ function get_cont(msg) {
 
     m(".row", [
       m(PG)]),
+
+    m(".row", [
+      m(BetterExplained)]),
+
   ])
 }
 

@@ -6,11 +6,11 @@
   them back (easily), and I use it to easily get quotes for mail
   signatures, or when I want to look smart.
 
-  I did to fiddle with [[https://mithril.js.org/][mithril]] and [[https://milligram.io/][milligram]], which are technologies
-  I'm not familiar at all. In the end, it's much more painful to
-  understand the toolchain and why I needed webpack anyway and node to
-  do the development than the coding part. I guess that's why libs that
-  free you from the dom (a bit) are so successful.
+  I wanted to fiddle with js and css ([[https://mithril.js.org/][mithril]] and [[https://milligram.io/][milligram]],) which
+  are technologies I'm not familiar. In the end, it's much more
+  painful to understand the toolchain and why I needed webpack anyway
+  and node to do the development than the coding part. I guess that's
+  why libs that free you from the dom (a bit) are so successful.
 
   The optical illusions are taken from
   https://im-possible.info/english/library/index.html, and the quotes
