@@ -4,6 +4,7 @@ var Untool = require("./untool")
 var Farnam = require("./farnam")
 var PG = require("./postgres")
 var BetterExplained = require("./better_explained")
+var TextVis = require("./textvis")
 
 var root = document.body
 var r = Math.floor(Math.random() * 1000) + 1;
@@ -43,6 +44,8 @@ function get_cont(msg) {
     m(".row", [
       m(BetterExplained)]),
 
+    m(".row", [
+      m(TextVis)]),
   ])
 }
 
